@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(187, 186, 186);
+    /* we will change it */
+    --hover-color: #18A291;
+    --back-color: white;
+    --big-rad: 24px;
+    --small-rad: 12px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* gap: 70px; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--back-color);
+    /* padding-left: 20px; */
+    /* padding-top: 20px; */
+    border-right: 1px solid var(--main-color);
+}
+
+nav div {
+    border-bottom: 1px solid var(--main-color);
+    padding: 20px 20px;
+}
+
+nav div ul {
+    list-style: none;
+}
+
+nav .two ul li,
+nav .three ul li {
+    padding-top: 20px;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+nav div ul li a[href="notification.html"] {
+    color: var(--hover-color);
+    font-weight: 600;
+}
+
+nav div ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* start dashboard  */
+
+.dashboard {
+    position: relative;
+    left: 250px;
+    /* background-color: bisque; */
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
+.dashboard .top {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    background-color: var(--back-color);
+    /* padding: 20px 20px; */
+    height: 81px;
+    border-bottom: 1px solid var(--main-color);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.dashboard .top .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.dashboard .top .content .btn {
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+.dashboard img {
+    width: 40px;
+}
+
+.dashboard .dash-content {
+    padding-top: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.dashboard .container {
+    background-color: white;
+    border-radius: var(--small-rad);
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dashboard .container .ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.dashboard .container .ligne .icon {
+    width: 700px;
+    height: 600px;
+}
+
+.dashboard .ligne .text {
+    display: flex;
+    align-items: center;
+    gap: 5PX;
+}
+
+.dashboard .ligne .text p {
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.dashboard .ligne span {
+    color: var(--main-color);
+    font-size: 14px;
+}

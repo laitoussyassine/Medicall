@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="icon_male" data-name="icon male" transform="translate(-457 -1346)">
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="20" cy="20" r="20" transform="translate(457 1346)" fill="#189de2"/>
+    <path id="male" d="M63.823,48h-3.6a.879.879,0,1,0,0,1.758H61.7l-2.413,2.413a6.951,6.951,0,1,0,1.241,1.241L62.944,51v1.474a.879.879,0,1,0,1.758,0v-3.6A.879.879,0,0,0,63.823,48ZM58.706,61.341a5.193,5.193,0,1,1,0-7.345A5.2,5.2,0,0,1,58.706,61.341Z" transform="translate(420.993 1309.828)" fill="#fff"/>
+  </g>
+</svg>

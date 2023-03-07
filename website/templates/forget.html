@@ -1,0 +1,31 @@
+
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/forget.css')}}">
+<section>
+    <div class="container">
+        <div class="logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="{{ url_for ('static', filename='images/logo.svg')}}" alt="">
+            </a>
+        </div>
+        <div class="text">
+            <h1>Reset Password</h1>
+            <p>Enter your email and we will
+                send you there a link to reset
+                your password</p>
+        </div>
+        <div class="form">
+            <form>
+                <div class="a">
+                    <label>Email Adress</label>
+                    <input type="email" placeholder="Enter your E-mail" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send email">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

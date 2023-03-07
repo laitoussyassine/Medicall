@@ -1,0 +1,152 @@
+<!-- {% block title %}dashboard{% endblock %} -->
+{% block head8 %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/all.min.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style/dashboard.css') }}">
+{% endblock head8 %}
+{% block content %}
+
+<!-- navbar  -->
+<nav>
+    <div class="one">
+        <ul>
+            <li>
+                <a href="" target="">
+                    <i></i>
+                    <span>Menu</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="two">
+        <ul>
+            <li>
+                <a href="#">
+                    <i></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/today">
+                    <i></i>
+                    <span>Today Appointment</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="chat.html">
+                    <i></i>
+                    <span>Chat</span>
+                </a>
+            </li> -->
+            <li>
+                <a href="/notification">
+                        <i></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/personal">
+                    <i></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="three">
+        <ul>
+            <!-- <li>
+                <a href="">
+                    <i></i>
+                    <span>Profil</span>
+                </a>
+            </li> -->
+            <li>
+                <a href="">
+                    <i></i>
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- dashboard  -->
+<section class="dashboard">
+    <div class="top">
+        <!-- <button>Notification <i></i></button> -->
+        <div class="content">
+            <!-- <div class="btn">
+                <i></i><span>notifications</span><i></i>
+            </div> -->
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                <span>Bradely Jackson</span>
+            </div>
+        </div>
+    </div>
+    <div class="dash-content">
+        <h1>Dashboard Overview</h1>
+        <div class="container">
+            <div class="left">
+                <div class="morning">
+                    <div class="text">
+                        <h3>Good Morning
+                            Bradley Jackson
+                        </h3>
+                        <p>Whatever you do, do with determination. You have one
+                            life to live, do your work with passion and give your best
+                        </p>
+                    </div>
+                    <div class="image">
+                        <!-- <img src="../images/dashboard/illustration good morning dashboard.svg" alt=""> -->
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/dashboard/today patients.svg')}}" alt="">
+                        <div class="text">
+                            <p>239</p>
+                            <span>Today Patients</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/dashboard/today patients.svg')}}" alt="">
+                        <div class="text">
+                            <p>239</p>
+                            <span>Client Helped</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/dashboard/urgent care.svg')}}" alt="">
+                        <div class="text">
+                            <p>60</p>
+                            <span>Urgent Case</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="profile">
+                    <p>Profile</p>
+                    <div class="wsst">
+                        <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                        <h5>Bradley Jackson</h5>
+                        <p>Doctor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <input type="datetime-local" name="" id=""> -->
+    </div>
+</section>
+{% endblock %}

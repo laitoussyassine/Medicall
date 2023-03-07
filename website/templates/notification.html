@@ -1,0 +1,208 @@
+{% block head9 %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/all.min.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style/notification.css')}}"> 
+{% endblock head9 %}
+
+{% block content %}
+    <nav>
+        <div class="one">
+            <ul>
+                <li>
+                    <a href="/dashboard" target="_blank">
+                        <i></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <i></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/today">
+                        <i></i>
+                        <span>Today Appointment</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="chat.html">
+                        <i></i>
+                        <span>Chat</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/personal">
+                        <i></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <!-- <li>
+                    <a href="">
+                        <i></i>
+                        <span>Profil</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="">
+                        <i></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- dashboard  -->
+    <section class="dashboard">
+        <div class="top">
+            <!-- <button>Notification <i></i></button> -->
+            <div class="content">
+                <div class="btn">
+                    <i></i><span>notifications</span><i></i>
+                </div>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                    <span>Bradely Jackson</span>
+                </div>
+            </div>
+        </div>
+        <div class="dash-content">
+            <h3>Notifications</h3>
+            <div class="container">
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/profil sophia help question.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Password Reset</p>
+                            <span>Your password has been restored successfully</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 9:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/photo thomas help question.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Carol Wachter</p>
+                            <span>Hey can you check the latest documents i have sent to you</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 10:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>William Fletcher</p>
+                            <span>Replied to your message, check it.</span>
+                        </div>
+                    </div>
+                    <span>May 17, 2022 at 9:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/picture updated.svg')}}" alt="">
+                        <!-- <div class="icon">
+                            <i class="fa-solid fa-image"></i>
+                        </div> -->
+                        <div class="cnt">
+                            <p>Picture Updated</p>
+                            <span>Your picture profile has been successfully updated</span>
+                        </div>
+                    </div>
+                    <span>May 17, 2022 at 9:30PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/warning.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Warning</p>
+                            <span>The site will not work during the next 24 hours, because we updating website</span>
+                        </div>
+                    </div>
+                    <span>May 17, 2022 at 10:20PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/mona.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Mona Logan</p>
+                            <span>Replied to your vocal message, check it.</span>
+                        </div>
+                    </div>
+                    <span>May 17, 2022 at 11:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/something went wrong.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Something went wrong!</p>
+                            <span>Please verify your email address for the account to be verified</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 9:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/password reste.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Password Reset</p>
+                            <span>Your password has been restored successfully</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 9:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="../images/notification/password reste.svg" alt="">
+                        <div class="cnt">
+                            <p>Password Reset</p>
+                            <span>Your password has been restored successfully</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 9:00PM</span>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/notification/password reste.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Password Reset</p>
+                            <span>Your password has been restored successfully</span>
+                        </div>
+                    </div>
+                    <span>May 16, 2022 at 9:00PM</span>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+<!-- <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/all.min.js')}}"></script> -->
+{% endblock %}

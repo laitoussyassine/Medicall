@@ -1,0 +1,118 @@
+:root {
+    --main-color: #18A291;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start container  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end container  */
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30PX;
+}
+
+section .text h1 {
+    letter-spacing: 1.2px;
+}
+
+section .text p {
+    margin-top: -15px;
+    max-width: 400px;
+}
+
+section form .a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+section form .a label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+section form .a input,
+section form .button input {
+    outline: none;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+section form .button input:hover {
+    opacity: 0.8;
+}
+
+section form .button input:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 490px) {
+
+    section form .a input,
+    section form .button input {
+        width: 300px;
+    }
+}
+
+section form .a input {
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+}
+
+section form .button input {
+    border: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+section form .button input[value="Send email"] {
+    color: white;
+}

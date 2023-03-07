@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.275" height="34.338" viewBox="0 0 55.275 34.338">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="55.275" height="34.338" rx="7.1" transform="translate(2.52 1.56)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_maroc_phone_number" data-name="icon maroc phone number" transform="translate(-2.52 -1.56)" clip-path="url(#clip-path)">
+    <g id="Groupe_9" data-name="Groupe 9" transform="translate(-14.193 -10.299)">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="88.58" height="58.991" fill="#d31624"/>
+      <path id="Tracé_1" data-name="Tracé 1" d="M62.3,29.765l-.683-2.1-.683,2.1h1.362ZM64.279,31.2l.418,1.291,1.78-1.291Zm-7.529,0,1.78,1.291.418-1.291h-2.2Zm3.006,2.182,1.857,1.349,1.857-1.349L62.763,31.2h-2.3l-.708,2.182h0Zm-.47,1.437-.679,2.094,1.784-1.294-1.1-.8h0Zm3.553.8,1.78,1.294-.679-2.094-1.1.8ZM55.87,40.677l2.2-6.747L52.32,29.761h7.1l2.2-6.751,2.2,6.751h7.1L65.164,33.93l2.2,6.747-5.745-4.169Z" transform="translate(-17.326 -3.285)" fill="#03723a" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,288 @@
+:root {
+    --main-color: #18A291;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start container  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end container  */
+
+header .container .navbar-brand img {
+    margin-left: 180px;
+}
+
+@media (max-width: 991px) {
+    header .container {
+        margin-left: 40px;
+    }
+
+    header .container img {
+        width: 150px;
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50PX;
+    flex-wrap: wrap;
+}
+
+section .write .text h1 {
+    margin-bottom: 0%;
+    font-size: 35px;
+}
+
+section .write .text p {
+    margin-top: -2px;
+    color: rgb(160, 159, 159);
+    font-size: 12px;
+}
+
+section .write form .a,
+section .write form .b {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+section .write form .a label,
+section .write form .b label {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+section .write form .a label .g {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+section .write form .a label .g p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+section .write form .a label .g a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #18A291;
+    margin-bottom: -15px;
+    margin-right: 50px;
+}
+
+section .write form .a input,
+section .write form .b input {
+    outline: none;
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+section .write form .a input {
+    width: 300px;
+}
+
+section .write form .b input {
+    width: 200px;
+}
+
+section .write form .button input:hover {
+    opacity: 0.8;
+}
+
+section .write form .button input:active {
+    opacity: 0.6;
+}
+
+section .write form .button input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #18A291;
+    cursor: pointer;
+}
+
+section .write form .button input[value="Login"] {
+    color: white;
+    font-size: 16px;
+}
+
+section .write .lnk {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section .write .lnk span {
+    color: rgb(160, 159, 159);
+    font-size: 12px;
+}
+
+section .write .lnk a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section .back {
+    background-color: var(--main-color);
+    padding: 150px 70px;
+    border-radius: 30px;
+}
+
+/* section .back h1,
+section .back p {
+    text-align: center;
+    color: white;
+} */
+
+section .bug img {
+    width: 440px;
+    height: 670px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 490px) {
+    section .write form .a input {
+        width: 250px;
+    }
+
+    section .write form .b input {
+        width: 150px;
+    }
+
+    section .write form .button input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    section .back {
+        display: none;
+    }
+}
+
+
+ul.ks-cboxtags {
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+ul.ks-cboxtags li {
+    display: inline;
+}
+
+ul.ks-cboxtags li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 1px solid #18A291;
+    color: #adadad;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 7px 40px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    /* content: "\f067"; */
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+    border: 2px solid #18A291;
+    background-color: #18A291;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+    border: 2px solid #e9a1ff;
+}

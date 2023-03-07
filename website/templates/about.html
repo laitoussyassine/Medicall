@@ -1,0 +1,105 @@
+{% extends "base.html" %}{% block title %}About{% endblock %}
+{% block head6 %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/about.css')}}">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock head6 %}
+
+{% block content %} 
+ <!-- about  -->
+    <div class="container">
+        <div class=" title">
+            <h2>About Us</h2> 
+        </div>
+    </div>
+
+    <div class="containr">
+        <div class="box">
+            <div class="image one"></div>
+            <div class="text">
+                <h1>About Us Medicall</h1>
+                <p>Medicall offers you the opportunity to benefit from the expertise of a 24/7 medical assistance
+                    service that responds to all types of care.<br>
+                    After receiving the phone number and address, you will
+                    be immediately assigned a medical tea according to the type of emergency</p>
+            </div>
+        </div>
+        <div class="box sp">
+            <div class="text">
+                <h1>Home Doctor</h1>
+                <p>Medicall provides a 24-hour on-call service for doctors at home. You can reach us at +212 6 28 00 00
+                    01 or +212 6 28 00 00 02 where our dispatchers will assist you to get medical help quickly. <br>
+                    Medicall
+                    provides all types of medical consultations: emergencies, general medicine, neonatal pediatrics,
+                    traumatology, diabetology, dermatology, gynecology, and psychiatry...
+                </p>
+            </div>
+            <div class="image two"></div>
+        </div>
+        <div class="box">
+            <div class="image three"></div>
+            <div class="text">
+                <h1>Emergency doctor</h1>
+                <p>The Emergency Physician works in close collaboration with all hospital structures. The Emergency
+                    Physicia is reactive, efficient, organized, has excellent interpersona skills and can adapt to all
+                    emergency situations.
+                </p>
+            </div>
+        </div>
+        <div class="box sp">
+            <div class="text">
+                <h1>Emergency 24h/24</h1>
+                <p>As soon as we receive your call, Medicall's regulation center puts at your disposal regulating
+                    doctors who will advise you and accompany you in the best conditions, while waiting for the arrival
+                    of the emergency doctor or specialist.
+                </p>
+            </div>
+            <div class="image four"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 item text">
+                    <h3 class="tititle">Medicall</h3>
+                    <p>Your health is very important to us. We offer complete to individuals with various health concerns, with our experienced doctors.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html">Emergencies</a></li>
+                        <li><a href="index.html">Care Routines</a></li>
+                        <li><a href="index.html">Hospitalization at home</a></li>
+                        <li><a href="index.html">Family Medicine</a></li>
+                        <li><a href="index.html">Telephone Assistance</a></li>
+                        <li><a href="index.html">SOS Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="/term">Term & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
+            </div> -->
+            <p class="copyright">© Medicall 2022 All Right Reserved</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+{% endblock  %}

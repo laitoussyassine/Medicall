@@ -1,0 +1,213 @@
+<!-- {% block title %}Today Appointment{% endblock %} -->
+{% block head5 %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/all.min.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style/today.css')}}"> 
+{% endblock head5 %}
+{% block content %}
+    <!-- navbar  -->
+    <nav>
+        <div class="one">
+            <ul>
+                <li>
+                    <a href="/dashboard" target="_blank">
+                        <i></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <i></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        <span>Today Appointment</span>
+                    </a>
+                </li>
+                <!-- <li>
+                        <a href="chat.html">
+                            <i></i>
+                            <span>Chat</span>
+                        </a>
+                    </li> -->
+                <li>
+                    <a href="/notification">
+                        <i></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/personal">
+                        <i></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <!-- <li>
+                        <a href="">
+                            <i></i>
+                            <span>Profil</span>
+                        </a>
+                    </li> -->
+                <li>
+                    <a href="">
+                        <i></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- dashboard  -->
+    <section class="dashboard">
+        <div class="top">
+            <!-- <button>Notification <i></i></button> -->
+            <div class="content">
+                <div class="btn">
+                    <i></i><span>notifications</span><i></i>
+                </div>
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                    <span>Bradely Jackson</span>
+                </div>
+            </div>
+        </div>
+        <div class="dash-content">
+            <h3>Today Appointment</h3>
+            <div class="container">
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/profil sophia help question.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Amanda Filetcher</p>
+                            <span>Doctor</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group A</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/dorothy.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Dorothy Lamorea</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group A</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne three">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/carol.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Carolin Watchaer</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group A</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/jery.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Jeerery Eelaliote</p>
+                            <span>Doctor</span>
+                        </div>
+                    </div>
+                    <p class="compl">Completed</p>
+                    <p>Team1 - Group B</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/maria.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Moiriria Younger</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="compl">Completed</p>
+                    <p>Team1 - Group B</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne three">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/mchiale.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Michaell Reeade</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="compl">Completed</p>
+                    <p>Team1 - Group B</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/bradley.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Bradely Jackson</p>
+                            <span>Doctor</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group C</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/lucille.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>William Fleticher</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group C</p>
+                    <button>Send message</button>
+                </div>
+                <div class="ligne">
+                    <div class="text">
+                        <img src="{{ url_for('static', filename='images/today appointment/bernad.svg')}}" alt="">
+                        <div class="cnt">
+                            <p>Bernnard Etherr</p>
+                            <span>Nurse</span>
+                        </div>
+                    </div>
+                    <p class="prg">In progress</p>
+                    <p>Team1 - Group C</p>
+                    <button>Send message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/all.min.js')}}"></script>
+{% endblock %}

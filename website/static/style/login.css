@@ -1,0 +1,191 @@
+:root {
+    --main-color: #18A291;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start container  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end container  */
+
+header .container {
+    margin-left: 180px;
+}
+
+@media (max-width: 991px) {
+    header .container {
+        margin-left: 40px;
+    }
+
+    header .container img {
+        width: 150px;
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50PX;
+    flex-wrap: wrap;
+}
+
+section .write .text h1 {
+    margin-bottom: 0%;
+    font-size: 35px;
+}
+
+section .write .text p {
+    margin-top: -2px;
+    color: rgb(160, 159, 159);
+    font-size: 12px;
+}
+
+section .write form .a:first-child {
+    padding-top: 20px;
+}
+
+section .write form .a,
+section .write form .b {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+section .write form .a label,
+section .write form .b label {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+section .write form .a input,
+section .write form .b input {
+    outline: none;
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+section .write form .a input {
+    width: 300px;
+}
+
+section .write form .b input {
+    width: 200px;
+}
+
+section .write form .button input:hover {
+    opacity: 0.8;
+}
+
+section .write form .button input:active {
+    opacity: 0.6;
+}
+
+section .write form .button input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+section .write form .button input[value="Login"] {
+    color: white;
+    font-size: 16px;
+}
+
+section .write .lnk {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section .write .lnk span {
+    color: rgb(160, 159, 159);
+    font-size: 12px;
+}
+
+section .write .lnk a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section .back {
+    background-color: var(--main-color);
+    padding: 150px 70px;
+    border-radius: 30px;
+}
+
+section .back h1,
+section .back p {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 490px) {
+    section .write form .a input {
+        width: 250px;
+    }
+
+    section .write form .b input {
+        width: 150px;
+    }
+
+    section .write form .button input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    section .back {
+        display: none;
+    }
+}

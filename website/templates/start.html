@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}start{% endblock %}
+{% block head1 %}
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style/start.css') }}"> -->
+{% endblock head1 %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/start.css') }}">
+<section>
+    <div class="container">
+        <div class="write">
+            <div class="text">
+                <h1>Get started is easy! </h1>
+                <p>Create ana account now and start working</p>
+            </div>
+            <div class="form">
+                <!-- <label>I am</label>
+                <ul class="ks-cboxtags">
+                    <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label
+                            for="checkboxOne">Doctor</label></li>
+                    <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label
+                            for="checkboxTwo">Nurse</label></li>
+                </ul> -->
+                <form method="POST">
+                    <div class="a">
+                        <label for="fullName">Your Full Name</label>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Full name"
+                          >
+                    </div>
+                    <div class="a">
+                        <label for="email">Email Adress</label>
+                        <input 
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your E-mail"
+                            >
+                    </div>
+                    <div class="a">
+                        <label for="password">
+                            <div class="g">
+                                <p>Password</p>
+                                <a href="/forget" target="_blank">Forgot password?</a>
+                            </div>
+                        </label>
+                        <input 
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            >
+                    </div>
+                    <div class="a">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            placeholder="Phone number"
+                            >
+                    </div>
+                    <div class="b">
+                        <label for="idNumber">ID Number</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="idNumber"
+                            name="idNumber"
+                            placeholder="ID Number"
+                            >
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+            <div class="lnk">
+                <span>Already Registred?</span><a href="/login" target="_blank">Login</a>
+            </div>
+        </div>
+        <div class="bug">
+            <img src="{{ url_for ('static', filename='images/Groupe de masques 10.jpg')}}" alt="">
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,354 @@
+{% extends "base.html" %} {% block title %}Medicall{% endblock %}{% block content %}
+<section class="landing py-3 ">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md py-4">
+                <h4 class="Welcome-btn ">Welcome to medicall</h4>
+                <h1 class="display-4">Nothing is more <span>Important </span>than your <span>Health</span> </h1>
+                <p class="text-black-50 py-1 ">your health is very important to us. we offer complete to individuals
+                    with various health concernes, with our exeperienced doctors.</p>
+                <a class="btn get-btn me-4" href="/start" target="_blank">Get Started</a>
+                <a class="btn get col-md" href="/urgence" target="_blank">Urgence</a>
+
+
+                <div class="row my-4">
+                    <div class="one  m-auto text-center  col-3">
+                        <div id="clockdiv"></div>
+                        <span>Doctor</span>     
+                    </div>
+                    <div class="two  m-auto text-center  col-3">
+                        <div id="clockdiv2"></div>
+                        <span>Nurse</span>
+                    </div>
+                    <div class="three  m-auto text-center  col-3">
+                        <div id="clockdiv3"></div>
+                        <span>Partner</span>
+                    </div>
+                    <div class="four  m-auto text-center  col-3">
+                        <div id="clockdiv4"></div>
+                        <span>Client Helped</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <img class="img-fluid d-none d-md-block" src="{{ url_for ('static', filename='images/landing.png')}}" alt="Doctor">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services -->
+<section class="services py-5 text-center" id="/services">
+    <div class="container">
+
+        <h2>Our Services </h2>
+        <p class="services-description text-center">We offer complete healthcare to individuals
+            with various health concerns.
+        </p>
+        <section class="row my-5">
+            <div class="col-sm col-sm-6 col-lg-4 ">
+                <div class="card mb-3 py-2">
+                    <div class="card-body">
+                        <div class="image text-start">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="{{ url_for ('static', filename='images/our service/before effect/emergency.svg')}}" alt="">
+                        </div>
+
+                        <h4 class="card-title text-start">Emergencies</h4>
+                        <p class="card-text text-start">An ambulance equipped with experienced doctors, nurses and
+                            orderlies for prompt treatment of any type of emergency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="card mb-3 py-2">
+                    <div class="card-body ">
+                        <div class="image text-start"><img
+                                src="{{ url_for ('static', filename='images/our service/before effect/care routines.svg')}}" alt=""></div>
+
+                        <h4 class="card-title text-start">Care Routines</h4>
+                        <p class="card-text text-start">The daily follow-up can be obtained through a document given
+                            to the person concerned.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="card mb-3 py-2">
+                    <div class="card-body">
+                        <div class="image text-start">
+                            <img src="{{ url_for ('static', filename='images/our service/before effect/hospital at hjome.svg')}}" alt="">
+                        </div>
+
+                        <h4 class="card-title text-start">Hospitalization At Home</h4>
+                        <p class="card-text text-start">With our home medical service, the patient can also benefit
+                            from continuity of care and treatment in the comfort of their own home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="card mb-3 py-2">
+                    <div class="card-body">
+                        <div class="image text-start"><img
+                                src="{{ url_for ('static', filename='images/our service/before effect/family ùedicine.svg')}}" alt=""></div>
+
+                        <h4 class="card-title text-start ">Family Medicine</h4>
+                        <p class="card-text text-start">Consultations for children and adults with computerized
+                            medical records from the moment the call is taken to the end of the intervention.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="card mb-3 py-2">
+                    <div class="card-body">
+                        <div class="image text-start">
+                            <img src="{{ url_for ('static', filename='images/our service/before effect/phone assistanc.svg')}}" alt="">
+                        </div>
+
+                        <h4 class="card-title text-start ">Telephone Assistance</h4>
+                        <p class="card-text text-start">With a simple call, our staff will listen to your needs and
+                            provide you with personalized advice and assistance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md-6 col-lg-4">
+                <div class="card mb-3 py-2">
+                    <div class="card-body">
+                        <div class="image text-start">
+                            <img src="{{ url_for ('static', filename='images/our service/before effect/sos medecin.svg')}}" alt="">
+                        </div>
+                        <h4 class="card-title text-start ">SOS MEDICIN</h4>
+                        <p class="card-text text-start">Our emergency physicians intervene at home for all urgent
+                            cases of general or specialized medicine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</section>
+<!-- partnerd -->
+<div class="partnerd container text-center py-5">
+    <h2 class="pb-2">Our Trusted Partnerd</h2>
+    <p class="pb-5">Trusted by over 132+ partners</p>
+    <section class="customer-logos slider">
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/Artboard 1 copy.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/Group 935.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/Group 942.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/maroc telecome.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/mo3a.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/osar tadamone.svg')}}">
+        </div>
+        <div class="slide">
+            <img class="img-fluid w-100 mt-3" src="{{ url_for ('static', filename='images/siha.svg')}}">
+        </div>
+    </section>
+</div>
+
+
+<!-- Mission -->
+<section class="mission" id="about">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="text-start col-md py-4 px-5">
+                <span class="first-title">Why Choose Us</span>
+                <h3 class=" display-6 py-1">Our mission is to provide good health for everybody </h3>
+                <div class="my-2"> <i class="fa-solid fa-circle-check"></i> <span class="works px-1">Professional
+                        Doctor & Nurse</span></div>
+                <div class="my-2"> <i class="fa-solid fa-circle-check"></i> <span class="works px-1">Doctor
+                        Generalist</span></div>
+                <div class="my-2"> <i class="fa-solid fa-circle-check"></i> <span class="works px-1">24/7
+                        Patient support</span></div>
+                <a class="btn rounded-pill get-btn col-md" href="/start" target="_blank">Start With Us</a>
+            </div>
+            <div class="col-md">
+                <img class="img-fluid" src="{{ url_for ('static', filename='images/1 (2).jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- testimonials -->
+
+<div class="section">
+    <div class="title">
+        <h3>Reviews</h3>
+        <p>What customer says</p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="{{ url_for ('static', filename='images/profil richard director.svg')}}" alt="">
+            <h5>David Lee</h5>
+            <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <h5 class="w">Excellent service</h5>
+            <p>
+                Great experience and quality work.
+                Was very professional and good communication. Turn
+                around time was very fast as well.
+            </p>
+        </div>
+        <div class="box">
+            <img src="{{ url_for ('static', filename='images/today appointment/jery.svg')}}" alt="">
+            <h5>Been jack</h5>
+            <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <h5 class="w">Excellent service</h5>
+            <p>
+                Great experience and quality work.
+                Was very professional and good communication. Turn
+                around time was very fast as well.
+            </p>
+        </div>
+        <div class="box">
+            <img src="{{ url_for ('static', filename='images/notification/william.svg')}}" alt="">
+            <h5>teach marchall</h5>
+            <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <h5 class="w">Excellent service</h5>
+            <p>
+                Great experience and quality work.
+                Was very professional and good communication. Turn
+                around time was very fast as well.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- subscribe -->
+
+ <section class="subscribe">
+    <div class="cont">
+        <h1>You Are a Doctor Or Nurse
+            Join Us And Start Working
+        </h1>
+        <button><a href="/start">Subscribe</a> </button>
+    </div>
+</section>
+
+<!-- message  -->
+
+<div class="message">
+    <div class="container">
+        <div class="input-text">
+            <h2>Have Questions?</h2>
+            <p>You can leave your message here and our
+                manager will call you to help them.
+            </p>
+            <div class="form">
+                <form method="POST">
+                    <div class="a">
+                        <label for="yourname" class="text-start">Your Name</label>
+                        <input type="text"
+                            id="yourname"
+                            name="yourname"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="a">
+                        <label for="phone" class="text-start">Phone</label>
+                        <input type="text"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone">
+                    </div>
+                    <div class="a">
+                        <label for="email" class="text-start">Email</label>
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="a">
+                        <label for="message" class="text-start">Message</label>
+                        <input type="text"
+                            id="message"
+                            name="message"
+                            placeholder="Type your message here">
+                    </div>
+                    <div class="button a m-auto w-75 py-4">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img-fluid" src="{{ url_for ('static', filename='images/have question.svg')}}" alt="">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block footer %}
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 item text">
+                    <h3 class="tititle">Medicall</h3>
+                    <p>Your health is very important to us. We offer complete to individuals with various health concerns, with our experienced doctors.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html">Emergencies</a></li>
+                        <li><a href="index.html">Care Routines</a></li>
+                        <li><a href="index.html">Hospitalization at home</a></li>
+                        <li><a href="index.html">Family Medicine</a></li>
+                        <li><a href="index.html">Telephone Assistance</a></li>
+                        <li><a href="index.html">SOS Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/term">Term & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
+            </div> -->
+            <p class="copyright">© Medicall 2022 All Right Reserved</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+{% endblock  %}

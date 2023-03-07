@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(187, 186, 186);
+    /* we will change it */
+    --hover-color: #18A291;
+    --back-color: white;
+    --big-rad: 24px;
+    --small-rad: 12px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* gap: 70px; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--back-color);
+    /* padding-left: 20px; */
+    /* padding-top: 20px; */
+    border-right: 1px solid var(--main-color);
+}
+
+nav div {
+    border-bottom: 1px solid var(--main-color);
+    padding: 20px 20px;
+}
+
+nav div ul {
+    list-style: none;
+}
+
+nav .two ul li,
+nav .three ul li {
+    padding-top: 20px;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+nav div ul li a[href="personal.html"] {
+    color: var(--hover-color);
+    font-weight: 600;
+}
+
+nav div ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* start dashboard  */
+
+.dashboard {
+    position: relative;
+    left: 250px;
+    /* background-color: bisque; */
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
+.dashboard .top {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    background-color: var(--back-color);
+    /* padding: 20px 20px; */
+    height: 81px;
+    border-bottom: 1px solid var(--main-color);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.dashboard .top .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.dashboard .top .content .btn {
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+.dashboard .top .content img {
+    width: 40px;
+}
+
+/* end dashboard  */
+
+/* start settings  */
+
+.dashboard .dash-content {
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.dashboard .dash-content .mrg {
+    margin-top: 40px;
+}
+
+.dashboard .dash-content h4 {
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.dashboard .links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard .links button {
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: var(--small-rad);
+    transition: 0.3s;
+}
+
+.dashboard .links button:hover {
+    opacity: 0.8;
+}
+
+.dashboard .links button:active {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.dashboard .links button:active a {
+    color: white;
+}
+
+.dashboard .links button a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.dashboard .links .mdf {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.dashboard .links .mdf a {
+    color: white;
+}
+
+.dashboard form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 500px));
+    gap: 40px;
+}
+
+.dashboard form .a {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard form .a label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.dashboard form .a input {
+    padding: 15px;
+    border-radius: var(--big-rad);
+    border: none;
+    color: var(--main-color);
+}
+
+.dashboard form .button {
+    width: 200px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.dashboard form .button input {
+    background-color: #CCEDE9;
+    padding: 8px 15px;
+    border-radius: var(--small-rad);
+    color: var(--hover-color);
+    transition: 0.3s;
+}
+
+.dashboard form .button input:hover {
+    background-color: var(--hover-color);
+    color: white;
+}

@@ -1,0 +1,162 @@
+<!-- {% block title %}personal{% endblock %} -->
+{% block head11 %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/all.min.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style/personal.css')}}"> 
+{% endblock head11 %}
+{% block content %}
+    <!-- navbar  -->
+    <nav>
+        <div class="one">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <i></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <ul>
+                <li>
+                    <a href="/dashboard">
+                        <i></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="today.html">
+                        <i></i>
+                        <span>Today Appointment</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="chat.html">
+                        <i></i>
+                        <span>Chat</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="/notification">
+                        <i></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/personal">
+                        <i></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="three">
+            <ul>
+                <!-- <li>
+                    <a href="">
+                        <i></i>
+                        <span>Profil</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="">
+                        <i></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- dashboard  -->
+<section class="dashboard">
+        <div class="top">
+            <!-- <button>Notification <i></i></button> -->
+            <div class="content">
+                <!-- <div class="btn">
+                    <i></i><span>notifications</span><i></i>
+                </div> -->
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                    <span>Bradely Jackson</span>
+                </div>
+            </div>
+        </div>
+        <div class="dash-content">
+            <h3>Settings</h3>
+            <div class="links">
+                <button class="mdf"><a href="personal.html">Personal information</a></button>
+                <button><a href="/payment">Payment information</a></button>
+                <button><a href="/password">Password change</a></button>
+            </div>
+            <h3 class="mrg">Personal information</h3>
+            <div class="upl">
+                <img src="{{ url_for('static', filename='images/profil richard director.svg')}}" alt="">
+                <div class="info">
+                    <p>Bradley Jackson</p>
+                    <p class="sma">BradeleyJackson@gmail.com</p>
+                </div>
+                <button>Upload New</button>
+            </div>
+            <form>
+                <div class="a">
+                    <label>First Name</label>
+                    <input type="text" value="Bradley">
+                </div>
+                <div class="a">
+                    <label>Last Name</label>
+                    <input type="text" value="Jackson">
+                </div>
+                <div class="a">
+                    <label>Email</label>
+                    <input type="email" value="BradleyJackson@gmail.com">
+                </div>
+                <div class="a">
+                    <label>Phone Number</label>
+                    <input type="text" value="+212 628150000">
+                </div>
+            </form>
+            <h3 class="mrg">Contact Information</h3>
+            <form>
+                <div class="a">
+                    <label>Street Adress</label>
+                    <input type="text" value="3810 Centennial Farm Road">
+                </div>
+                <div class="a">
+                    <label>City</label>
+                    <input type="text" value="Red Oak">
+                </div>
+                <div class="a">
+                    <label>State</label>
+                    <input type="text" value="lowa">
+                </div>
+                <div class="a">
+                    <label>Country</label>
+                    <input type="text" value="Morocco">
+                </div>
+                <div class="a">
+                    <label>Line 2 (Optional)</label>
+                    <input type="text" value="N1540">
+                </div>
+                <div class="a">
+                    <label>Zip Code</label>
+                    <input type="text" value="51566">
+                </div>
+                <div class="button a">
+                    <input type="submit" value="Update profile">
+                </div>
+            </form>
+
+        </div>
+</section>
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/all.min.js')}}"></script>
+{% endblock %}

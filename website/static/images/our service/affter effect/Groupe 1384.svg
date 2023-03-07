@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="78" viewBox="0 0 88 78">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#18a291"/>
+      <stop offset="1" stop-color="#0098a9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1716" data-name="Rectangle 1716" width="43.238" height="43.277" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_1384" data-name="Groupe 1384" transform="translate(5495 -2331)">
+    <rect id="Rectangle_1699" data-name="Rectangle 1699" width="88" height="78" rx="12" transform="translate(-5495 2331)" fill="#fff"/>
+    <g id="Groupe_1322" data-name="Groupe 1322" transform="translate(-5472.619 2348.361)">
+      <g id="Groupe_1321" data-name="Groupe 1321" clip-path="url(#clip-path)">
+        <path id="Tracé_2023" data-name="Tracé 2023" d="M4.312,23.787c-.825,0-1.6.053-2.37-.011a2.136,2.136,0,0,1-1.567-3.34,3.442,3.442,0,0,1,.429-.5Q10.372,10.369,19.943.8a2.181,2.181,0,0,1,3.385,0Q32.9,10.371,42.478,19.931a2.2,2.2,0,0,1-.76,3.775,6.579,6.579,0,0,1-1.508.107c-.4.015-.8,0-1.257,0v.654q0,7.146,0,14.291a4.331,4.331,0,0,1-3.439,4.409,5.844,5.844,0,0,1-1.259.1q-12.621.008-25.242,0a4.338,4.338,0,0,1-4.54-3.265,5.814,5.814,0,0,1-.153-1.4Q4.3,31.539,4.312,24.469ZM34.589,38.908c.009-.159.021-.276.021-.393q0-9.955-.013-19.909a1.09,1.09,0,0,0-.312-.683q-6.147-6.177-12.317-12.33c-.1-.1-.219-.2-.341-.3-.1.088-.173.151-.243.221Q15.149,11.741,8.925,17.983a1.09,1.09,0,0,0-.259.7q-.021,9.853-.01,19.706c0,.163.014.327.022.514Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        <path id="Tracé_2024" data-name="Tracé 2024" d="M102.513,128h4.329v6.459h6.468v4.326h-6.434v6.474h-4.357V138.8H96.06v-4.324h6.453Z" transform="translate(-83.055 -110.668)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
